@@ -240,6 +240,12 @@ variable "kms_key_aliases" {
   default     = []
 }
 
+variable "kms_key_custom_key_store_id" {
+  description = "ID of the KMS Custom Key Store where the key will be stored instead of KMS (eg CloudHSM)."
+  type        = string
+  default     = null
+}
+
 ################################################################################
 # CloudWatch Log Group
 ################################################################################
